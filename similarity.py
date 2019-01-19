@@ -4,17 +4,13 @@ from nltk.corpus import wordnet as wn
 def penn_to_wn(tag):
     """ Convert between a Penn Treebank tag to a simplified Wordnet tag """
     if tag.startswith('N'):
-        return 'n'
- 
+        return 'n' 
     if tag.startswith('V'):
-        return 'v'
- 
+        return 'v' 
     if tag.startswith('J'):
-        return 'a'
- 
+        return 'a' 
     if tag.startswith('R'):
-        return 'r'
- 
+        return 'r' 
     return None
  
 def tagged_to_synset(word, tag):
